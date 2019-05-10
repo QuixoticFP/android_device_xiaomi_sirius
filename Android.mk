@@ -6,7 +6,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(sirius, $(TARGET_DEVICE)),)
+ifneq ($(TARGET_DEVICE),sirius)
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
 endif
