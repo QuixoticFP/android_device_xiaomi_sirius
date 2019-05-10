@@ -6,8 +6,8 @@
 
 $(call inherit-product, device/xiaomi/sirius/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Bootleggers stuff.
+$(call inherit-product, vendor/bootleggers/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := bootleg_sirius
@@ -17,6 +17,10 @@ PRODUCT_MODEL := MI 8 SE
 PRODUCT_MANUFACTURER := Xiaomi
 
 BUILD_FINGERPRINT := "Xiaomi/sirius/sirius:9/PKQ1.181121.001/9.3.28:user/release-keys"
+
+#OFFICIAL Stuff
+BOOTLEGGERS_BUILD_TYPE :="UnShishufied"
+DEVICE_MAINTAINERS := "Zachx"
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="sirius-user 9 PKQ1.181121.001 9.3.28 release-keys" \
